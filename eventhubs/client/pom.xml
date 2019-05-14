@@ -15,7 +15,7 @@
   <groupId>com.azure</groupId>
   <artifactId>azure-eventhubs-clients</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.0-SNAPCHAT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <name>Microsoft Azure client library for Event Hubs (Parent)</name>
   <description>This package contains the Microsoft Azure Event Hubs client library.</description>
@@ -44,6 +44,10 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-core</artifactId>
     </dependency>
 
     <dependency>
@@ -75,8 +79,6 @@
 
   <modules>
     <module>azure-eventhubs</module>
-    <module>azure-eventhubs-eph</module>
-    <module>azure-eventhubs-extensions</module>
   </modules>
 
 </project>
